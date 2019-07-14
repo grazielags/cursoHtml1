@@ -1,0 +1,35 @@
+<html>
+
+<body>
+    <form>
+        <label for="nome">Nome: </label>
+        <input style="width: 500px" type="text" name="nome" required />
+        <br>
+        <label for="quantity">Quantidade: </label>
+        <input type="number" name="quantity" min=1 max=10 required />
+        <br><br><br>
+        <label for="sexo">Sexo: </label>
+        <input type="radio" name="sexo" value="feminino" required />Feminino
+        <input type="radio" name="sexo" value="masculino" required />Masculino
+        <br><br><br>
+        <label for="cidade">Cidade: </label>
+        <input type="checkbox" name="cidade" value="sp" required />São Paulo
+        <input type="checkbox" name="cidade" value="fl" required />Florianópolis
+        <input type="checkbox" name="cidade" value="rj" required />Rio de Janeiro
+        <br><br><br>
+        <label for="descricao">Descrição: </label>
+        <textarea name="descricao" cols="40" rows="10">Texto gvsgvs sgvdhsv hhdghsvd</textarea>
+        <br><br><br>
+        <label for="listaEstados">Estado: </label>
+        <select name="listaEstados" required>
+            <option selected value="SC">Santa Catarina</option>
+            <option value="PR">Paraná</option>
+            <option value="RS">Rio Grande do Sul</option>
+        </select>
+        <br><br><br>
+        <input type="submit" name="envia" value="Enviar">
+        <input type="reset" name="limpar" value="Limpar">
+    </form>
+</body>
+
+</html>

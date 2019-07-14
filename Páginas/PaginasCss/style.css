@@ -1,0 +1,15 @@
+.h2personalizado {
+    color: brown;
+    font-size: 48pt
+}
+
+h1 {
+    font-size: 36pt;
+    color: red;
+    font-family: fantasy
+}
+
+h2 {
+    font-size: 24pt;
+    color: blue
+}
