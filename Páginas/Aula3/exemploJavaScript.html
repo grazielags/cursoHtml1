@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    </meta>
+    <script>
+        function validarForm() {
+            var val = document.getElementById("valido");
+            var erros = "";
+            try {
+                var x = document.getElementById("nome").value;
+                if (x == null || x == "") {
+                    erros += "O Nome deve ser preenchido!<br>";
+                }
+                var y = document.getElementById("email").value;
+                var atpos = y.indexOf("@");
+                var dotpos = y.lastIndexOf(".");
+                if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= y.length) {
+                    erros += "Digite um e - mail válido!<br>";
+                }
+                if (erros) {
+                    throw erros;
+                }
+                return true;
+            } catch (err) {
+                val.style.color = "#FF0000";
+                val.innerHTML = "Erro: " + err;
+                return false;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form name="meuForm" onsubmit="return validarForm();" method="post">
+        Nome: <input type="text" id="nome"> e-mail: <input type="text" id="email">
+        <button>Enviar</button>
+        <p id="valido"></p>
+    </form>
+</body>
+
+</html>

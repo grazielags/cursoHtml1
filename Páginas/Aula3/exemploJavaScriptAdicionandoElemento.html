@@ -1,0 +1,21 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    </meta>
+</head>
+
+<body id="corpo">
+    <h1>Remover Elementos</h1>
+    <p id="texto">Texto que será removido</p>
+    <button onclick="remover()">Remover!!!!</button>
+    <script>
+        function remover() {
+            var pai = document.getElementById("corpo");
+            var filho = document.getElementById("texto");
+            pai.removeChild(filho);
+        }
+    </script>
+</body>
+
+</html>
